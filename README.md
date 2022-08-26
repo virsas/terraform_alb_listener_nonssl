@@ -35,7 +35,7 @@ variable "alb_listener_main_http" {
 # Module
 ##############
 module "alb_listener_main_http" {
-  source = "github.com/virsas/terraform_alb_listener_nonssl"
+  source = "git::https://github.com/virsas/terraform_alb_listener_nonssl.git?ref=v1.0.0"
   listener = var.alb_listener_main_http
   alb = module.alb_main.arn
 }
